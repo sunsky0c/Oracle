@@ -16,6 +16,7 @@ WHERE d.department_id = e.department_id
 GROUP BY department_name
 HAVING d.department_name in ('IT'，'Sales');
 ```
+***
 自定义查询语句
 ```sql
 SELECT d.department_id,d.department_name 
