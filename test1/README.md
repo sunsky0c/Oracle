@@ -28,7 +28,7 @@ FROM hr.departments d
 ORDER BY d.department_id 
 OFFSET 5 ROWS FETCH NEXT 5 ROW ONLY;
 ```
---运行结果如下：
+-- 运行结果如下：
 
 ![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/tu.png)
 
