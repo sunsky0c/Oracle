@@ -1,6 +1,6 @@
 ##实验一##
 
-*查询语句1
+* 查询语句1
 ```sql
 SELECT d.department_name，count(e.job_id)as "部门总人数"，
 avg(e.salary)as "平均工资"
@@ -10,7 +10,7 @@ and d.department_name in ('IT'，'Sales')
 GROUP BY department_name;
 ```
 
-*查询语句2
+* 查询语句2
 ```sql
 SELECT d.department_name，count(e.job_id)as "部门总人数"，
 avg(e.salary)as "平均工资"
@@ -19,7 +19,7 @@ WHERE d.department_id = e.department_id
 GROUP BY department_name
 HAVING d.department_name in ('IT'，'Sales');
 ```
-*查询语句1和查询语句2都是：以部门名称分组查询所有部门及以下员工的总数与平均工资。
+* 查询语句1和查询语句2都是：以部门名称分组查询所有部门及以下员工的总数与平均工资。
 ***
 自定义查询语句
 ```sql
