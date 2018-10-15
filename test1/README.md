@@ -19,9 +19,9 @@ WHERE d.department_id = e.department_id
 GROUP BY department_name
 HAVING d.department_name in ('IT'，'Sales');
 ```
-* 查询语句1和查询语句2都是：以部门名称分组查询所有部门及以下员工的总数与平均工资。
+>查询语句1和查询语句2都是：以部门名称分组查询所有部门及以下员工的总数与平均工资。
 ***
-自定义查询语句
+* 自定义查询语句
 ```sql
 SELECT d.department_id,d.department_name 
 FROM hr.departments d 
