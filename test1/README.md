@@ -9,6 +9,9 @@ where d.department_id = e.department_id
 and d.department_name in ('IT'，'Sales')
 GROUP BY department_name;
 ```
+-- 运行结果如下：
+
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test1/1.png)
 
 * 查询语句2
 ```sql
@@ -19,6 +22,10 @@ WHERE d.department_id = e.department_id
 GROUP BY department_name
 HAVING d.department_name in ('IT'，'Sales');
 ```
+-- 运行结果如下：
+
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test1/2.png)
+
 >相同之处：以部门名称分组查询所有部门及以下员工的总数与平均工资。
 >
 >不同之处：“Where”是一个约束声明，在查询数据库的结果返回之前对数据库中的查询条件进行约束，即在结果返回之前起作用；
