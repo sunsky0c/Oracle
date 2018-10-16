@@ -19,7 +19,8 @@ WHERE d.department_id = e.department_id
 GROUP BY department_name
 HAVING d.department_name in ('IT'，'Sales');
 ```
->查询语句1和查询语句2都是：以部门名称分组查询所有部门及以下员工的总数与平均工资。
+>相同之处：以部门名称分组查询所有部门及以下员工的总数与平均工资。
+>不同之处：where 子句的作用是在对查询结果进行分组前，将不符合where条件的行去掉，即在分组之前过滤数据，条件中不能包含聚组函数，使用where条件显示特定的行。having 子句的作用是筛选满足条件的组，即在分组之后过滤数据，条件中经常包含聚组函数，使用having 条件显示特定的组，也可以使用多个分组标准进行分组。
 ***
 * 自定义查询语句
 ```sql
