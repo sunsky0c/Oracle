@@ -33,7 +33,7 @@ OFFSET 5 ROWS FETCH NEXT 5 ROW ONLY;
 ```
 -- 运行结果如下：
 
-![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/tu.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test1/tu.png)
 
 >查询部门编号以及名字，并以一次一个数据块分页查询，以五条数据为基础。
 >并且在使用OFFSET....FETCH子句时必须同时使用ORDER BY，
