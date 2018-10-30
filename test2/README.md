@@ -23,7 +23,8 @@ SQL> exit
 
 运行结果：
 
-![](./img/sqldevelop修改用户.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle1.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle2.png)
 
 步骤二：新用户new_user连接到pdborcl，创建表mytable和视图myview，插入数据，最后将myview的SELECT对象权限授予hr用户。
 
@@ -50,7 +51,7 @@ SQL>exit
 ```
 运行结果：
 
-![](./img/sqldevelop修改用户.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle3.png)
 
 步骤三：用户hr连接到pdborcl，查询new_user授予它的视图myview
 
@@ -65,7 +66,7 @@ SQL> exit
 ```
 运行结果：
 
-![](./img/sqldevelop修改用户.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle4.png)
 
 ## 查看数据库的使用情况
 
@@ -89,7 +90,7 @@ SQL>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
 
 运行结果：
 
-![](./img/sqldevelop修改用户.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle5.png)
 
 ## 对数据库和表空间占用情况的分析
 
