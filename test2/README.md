@@ -20,6 +20,7 @@ Grant succeeded.
 SQL> exit
 ```
 > 语句“ALTER USER new_user QUOTA 50M ON users;”是指授权new_user用户访问users表空间，空间限额是50M。
+
 运行结果：
 
 ![](./img/sqldevelop修改用户.png)
