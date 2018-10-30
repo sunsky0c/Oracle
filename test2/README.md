@@ -51,7 +51,7 @@ SQL>exit
 ```
 运行结果：
 
-![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle3.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle3.jpg)
 
 步骤三：用户hr连接到pdborcl，查询new_user授予它的视图myview
 
@@ -66,7 +66,7 @@ SQL> exit
 ```
 运行结果：
 
-![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle4.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle4.jpg)
 
 ## 查看数据库的使用情况
 
@@ -90,7 +90,7 @@ SQL>SELECT a.tablespace_name "表空间名",Total/1024/1024 "大小MB",
 
 运行结果：
 
-![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle5.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test2/Oracle5.jpg)
 
 ## 对数据库和表空间占用情况的分析
 
