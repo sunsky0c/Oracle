@@ -7,15 +7,15 @@
 
 ## 第二步：新建orders表并以年份为范围分区到users，users02，users03  
 
-![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/21.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/21.PNG)
 
 ##  第三步：为order表设置主键 order_id
 
-![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/22.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/22.PNG)
 
 ##  第四步：创建order_details为orders的从表并根据orders的分区进行分区  
 
-![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/23.png)
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/23.PNG)
 
 ## 第五步插入数据到orders表中  
 
