@@ -53,7 +53,7 @@ end;
 ![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/40.png)
 ![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/41.png)
 
-###插入后order表部分展示
+### 插入后order表部分展示
 
 ![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/42.png)
 
@@ -72,5 +72,14 @@ FROM orders partition (PARTITION_BEFORE_2016) LEFT JOIN order_details partition 
 ON (orders.order_id = order_details.order_id);
 ```
 ![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test3/51.png)
+
+- 分区的作用：
+分区功能能够将表、索引或索引组织表进一步细分为段，这些数据库对象的段叫做分区。每个分区有自己的名称，还可以选择自己的存储特性。
+
+- 表分区的优点 
+表分区有以下优点： 
+1、优化性能：可以按用户的需求制定部分查询，提高检索速度。 
+2、容错性提高：如果表个别分区出错，表在其他分区的数据仍然可用； 
+3、维护性上升：如果表个别分区出错，需要修复数据，只修复该分区即可； 
 
 
