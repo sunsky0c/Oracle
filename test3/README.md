@@ -16,6 +16,36 @@
 
 ## 第五步插入数据到orders表中  
 
+```
+//users表
+begin
+for i in 1..4000
+loop   
+insert into orders(ORDER_ID ,customer_name, customer_tel, order_date, employee_id, trade_receivable, discount) VALUES(i,'liujun', '158...', to_date ( '2017-10-21 10:31:32' , 'YYYY-MM-DD HH24:MI:SS' ), 007, 16, 7);
+end loop;
+    commit;
+end;
+/
+//users02表
+begin
+for i in 4001..8000
+loop   
+insert into orders(ORDER_ID ,customer_name, customer_tel, order_date, employee_id, trade_receivable, discount) VALUES(i,'liujun', '158...', to_date ( '2017-10-21 10:31:32' , 'YYYY-MM-DD HH24:MI:SS' ), 007, 16, 7);
+end loop;
+    commit;
+end;
+/
+//users03表
+begin
+for i in 8001..10000
+loop   
+insert into orders(ORDER_ID ,customer_name, customer_tel, order_date, employee_id, trade_receivable, discount) VALUES(i,'liujun', '158...', to_date ( '2017-10-21 10:31:32' , 'YYYY-MM-DD HH24:MI:SS' ), 007, 16, 7);
+end loop;
+    commit;
+end;
+/
+```
+
 39
 40
 41
@@ -26,13 +56,18 @@
 
 ## 第六步联合查询：  
 
+```
+//查询PARTITION_BEFORE_2016分区中两张表的数据（部分列）
+SELECT
+    orders.order_id,
+    orders.order_date,
+    order_details.order_id,
+    TRADE_RECEIVABLE,
+    PRODUCT_ID,
+    PRODUCT_PRICE
+FROM orders partition (PARTITION_BEFORE_2016) LEFT JOIN order_details partition (PARTITION_BEFORE_2016)
+ON (orders.order_id = order_details.order_id);
+```
+51
 
-##  不分区对比：  
 
-
-##  对比：    
-- 同样多的数据分区后的查询：  
-cpu消耗275 ，consistent gets=137
-- 不分区：  
-cpu消耗35 ，consistent gets=89  
-虽然分区消耗cpu多，访问数据块次数多。但是在用时上小于不分区的。分区只需要搜索特定分区，而非整张表，提高了查询速度。
