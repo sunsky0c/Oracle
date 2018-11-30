@@ -50,9 +50,9 @@ create or replace PACKAGE BODY MyPack IS
     END;
 END MyPack;    
 ```
-++ 测试一结果图（要求输入的参数是部门号，输出部门的销售金额）：<br>
+- #### 测试一结果图（要求输入的参数是部门号，输出部门的销售金额）：<br>
 ![](https://github.com/sunsky0c/Oracle/edit/master/test5/52.PNG)<br>
-++ 测试二结果图（要求输入参数是员工号，输出员工的ID,姓名，销售总金额）：<br>
+- #### 测试二结果图（要求输入参数是员工号，输出员工的ID,姓名，销售总金额）：<br>
 ![](https://github.com/sunsky0c/Oracle/edit/master/test5/53.PNG)<br>
 
 3.由于订单只是按日期分区的，上述统计是全表搜索，因此统计速度会比较慢，如何提高统计的速度呢？<br>
