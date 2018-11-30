@@ -4,10 +4,10 @@
 本实验以实验四为基础。
 ## 实验步骤：
 1.创建一个包(Package)，包名是MyPack。
-![](https://github.com/sunsky0c/Oracle/edit/master/test5/51.PNG)<br>
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test5/51.png)<br>
 2.声明函数与过程并实现。
 - #### 声明：
-![](https://github.com/sunsky0c/Oracle/edit/master/test5/50.PNG)<br>
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test5/50.png)<br>
 - #### 实现：
 ```sql
 create or replace PACKAGE BODY MyPack IS
@@ -51,9 +51,9 @@ create or replace PACKAGE BODY MyPack IS
 END MyPack;    
 ```
 - #### 测试一结果图（要求输入的参数是部门号，输出部门的销售金额）：<br>
-![](https://github.com/sunsky0c/Oracle/edit/master/test5/52.PNG)<br>
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test5/52.png)<br>
 - #### 测试二结果图（要求输入参数是员工号，输出员工的ID,姓名，销售总金额）：<br>
-![](https://github.com/sunsky0c/Oracle/edit/master/test5/53.PNG)<br>
+![自定义运行结果](https://github.com/sunsky0c/Oracle/raw/master/test5/53.png)<br>
 
 3.由于订单只是按日期分区的，上述统计是全表搜索，因此统计速度会比较慢，如何提高统计的速度呢？<br>
 用索引提高效率;分区技术。
