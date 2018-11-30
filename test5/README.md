@@ -6,10 +6,10 @@
 1.创建一个包(Package)，包名是MyPack。
 ![](https://github.com/sunsky0c/Oracle/edit/master/test5/51.PNG)<br>
 2.声明函数与过程并实现。
--- 声明：
+- #### 声明：
 ![](https://github.com/sunsky0c/Oracle/edit/master/test5/50.PNG)<br>
--- 实现：
-```
+- #### 实现：
+```sql
 create or replace PACKAGE BODY MyPack IS
   --测试一
   FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER
